@@ -1,9 +1,13 @@
-# gmod_data_storages
-data storages like in JavaScript 
+# 📚 Garry's Mod Data Storages
 
-example:
+[Data Storages](https://javascript.info/localstorage) like in JavaScript.
+
+Example:
+
 ```lua
-store:New("localstorage") -- creates localstorage variable in lua global table 
-localstorage.test_key = 666 -- sets value and save it to database
-print(localstorage.test_key) -- check value
+store:New("localStorage") -- creates localStorage table in lua global table
+
+localStorage.test_key = 666 -- set value to localStorage, and this value will be save in SQLite gmod database
+
+print(localStorage.test_key) -- checks that the value has been stored in the table
 ```
